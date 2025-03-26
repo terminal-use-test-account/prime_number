@@ -11,7 +11,7 @@ def is_prime(n):
         if n % i == 0 or n % (i + 2) == 0:
             return False
         # This is incorrect. Should increment by 6 each time
-        i += 6
+        i += 5
     return True
 
 def nth_prime(n):
