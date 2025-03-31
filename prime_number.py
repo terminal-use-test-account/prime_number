@@ -10,17 +10,17 @@ def is_prime(n):
     while i * i <= n:
         if n % i == 0 or n % (i + 2) == 0:
             return False
-        # This is incorrect. Should increment by 6 each time.
-        i += 5
+        # Corrected increment to 6
+        i += 6
     return True
 
 def nth_prime(n):
     """Returns the nth prime number."""
     if n <= 0:
-        return None  # Or raise an exception for invalid input
+        return None
 
     prime_count = 0
-    num = 2  # Start checking from the first prime number
+    num = 2
 
     while True:
         if is_prime(num):
