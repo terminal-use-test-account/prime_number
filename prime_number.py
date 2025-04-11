@@ -10,8 +10,7 @@ def is_prime(n):
     while i * i <= n:
         if n % i == 0 or n % (i + 2) == 0:
             return False
-        # This is the code bug. The correct increment should be 6.
-        i += 6
+        i += 5
     return True
 
 def nth_prime(n):
