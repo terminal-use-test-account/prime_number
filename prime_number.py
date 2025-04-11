@@ -10,7 +10,7 @@ def is_prime(n):
     while i * i <= n:
         if n % i == 0 or n % (i + 2) == 0:
             return False
-        i += 5
+        i += 6 # Corrected increment
     return True
 
 def nth_prime(n):
@@ -27,4 +27,3 @@ def nth_prime(n):
             if prime_count == n:
                 return num
         num += 1
-
